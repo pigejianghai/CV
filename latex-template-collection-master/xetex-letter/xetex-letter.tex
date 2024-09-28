@@ -1,0 +1,95 @@
+\documentclass{xetex-letter}
+
+% Minion Pro is used as the main font, if you don't
+% have it installed uncomment this line or choose another pretty font
+\setmainfont[Numbers=OldStyle]{Times New Roman}
+
+% senders personal data
+\def \first {Hai}
+\def \last {Jiang}
+\def \street {Shenzhen}
+\def \city {Guangdong, China}
+
+% recipient
+\def \recipientHighlight {Motivation Letter}
+\def \recipientRest {Shenzhen \\ Guangdong \\ China}
+
+% just for the blindtext
+\usepackage{lipsum} 
+
+\usepackage{polyglossia}
+\setmainlanguage{english}
+
+\begin{document}
+
+% to show the folding marks
+\foldingmarks
+
+\letterstart
+
+\salutation{Dear Sir or Madam,}
+
+% \lipsum[1-2]
+I am writing to apply for the PhD posotion focusing on the Big Model in the Artificial Intelligence at your university.
+\ \\
+\ \\
+With a deep-seated passion for Computer Science and Mathematics, 
+I began my studies in Computational Mathematics in 2019 after earning my Bachelor's degree in Information Security in China.
+While focusing on Deep Learning technology, I participated in a research project aimed at imitating personal handwriting styles.
+The project involved learning the Chinese handwritten style of Shiing Shen Chern from approximately 220 characters.
+Through this experience, I gained knowledge of Generative Adversarial Networks 
+and developed skills in manuscript searching, data preprocessing, and code replication.
+As a result, I completed my Master's thesis on the personalized imitation of Chinese handwritten characters using GANs.
+\ \\
+\ \\
+Furthermore, to integrate Deep Learning with numerical approximation theory, 
+I participated in the Compressed Sensing MRI ADMM-Net project.
+Traditional numerical algorithms perform well on simple images, 
+but they fail to preserve detailed information after numerous iterations.
+With advancements in Deep Learning, 
+many researchers have employed Convolutional Neural Networks to unfold equations 
+and automatically adjust parameters during iterations to preserve details. 
+Through this project, I gained knowledge of convergent algorithm theory and proofs, 
+as well as the integration process with Deep Learning. 
+This experience significantly enhanced my skills in both programming and theoretical understanding.
+\ \\
+\ \\
+After earning my Master's Degree in Computational Mathematics, 
+I worked as a Research Assistant in a group at Sun Yat-sen University dedicated to Computer-Assisted Intervention. 
+During my tenure, I participated in proposal writing 
+for a key program from the Science and Technology of China (2023YFE0204300, which was successfully approved). 
+I also completed two progress reports and the completion report for projects funded 
+by the National Natural Science Foundation of China (Grants 81971691 and 12126610). 
+Additionally, I wrote the technological specifications for a patent application and a medical device application. 
+Over the past two years, I have contributed to three projects focused on 
+diagnosing Placenta Accreta Spectrum Disorders, 
+predicting metastasis in Axillary Sentinel Lymph Nodes, 
+and predicting the response to Neoadjuvant Chemotherapy based on MRI. 
+The first two projects yielded excellent experimental results but lacked technological novelty. 
+Throughout these tasks, I developed skills in programming (Python, PyTorch, and TensorFlow) and manuscript reading.
+\ \\
+\ \\
+I believe that the PhD position in your research unit will be a life-changing experience to 
+achieve the career I aspire for. 
+Your research field the Machine Learning Mechanism are aligned my core interests. 
+I am genuinely committed to investigating pragmatic ways to 
+maximize use of Engineering and Computer Science. 
+% On the contrary, the 
+\ \\
+\ \\
+I am confident that I can thrive as a promising candidate for this PhD position. 
+My academic background and program experience, along with my personal skills, 
+demonstrate my compatibility with this program. 
+In summary, I have acquired extensive knowledge and skills in Computer Science and Computational Mathematics. 
+Additionally, my research in Deep Learning, Medical Science, 
+and Mathematics has equipped me to be a competent team player.
+\ \\
+\ \\
+Thank you for considering my application. 
+I look forward to embarking on my next academic journey at your university.
+\closing{Sincerely,}
+\enclosure[Attached]{curriculum vit\ae{}}
+
+\letterend
+
+\end{document}
