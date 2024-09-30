@@ -69,7 +69,7 @@
 \ProcessOptions\relax
 
 % Use article class as the base class.
-\LoadClass[10pt,oneside]{article}
+\LoadClass[11pt,oneside]{article}
 
 % Geometry package for page margins.
 \RequirePackage[
@@ -169,13 +169,13 @@ BoldItalicFont=FreeSerifBoldItalic]
 
 % Font styles.
 \newcommand{\UseHeadingFont}{\normalfont}
-\newcommand{\UseHeaderFooterFont}{\UseHeadingFont\fontsize{8.2pt}{9.5pt}\selectfont}
-\newcommand{\UseNoteFont}{\UseHeadingFont\fontsize{8pt}{9.6pt}\selectfont}
-\newcommand{\UseTitleFont}{\UseHeadingFont\fontsize{28pt}{33.6pt}\selectfont\bfseries}
-\newcommand{\UseSubTitleFont}{\normalfont\fontsize{8.6pt}{10.3pt}\selectfont}
-\newcommand{\UseSectionFont}{\UseHeadingFont\fontsize{9pt}{11pt}\selectfont\bfseries}
-\newcommand{\UseSubSectionFont}{\UseHeadingFont\fontsize{8.6pt}{10.3pt}\selectfont\bfseries}
-\newcommand{\UseDetailFont}{\normalfont\fontsize{8.6pt}{10.3pt}\selectfont}
+\newcommand{\UseHeaderFooterFont}{\UseHeadingFont\fontsize{11.2pt}{12pt}\selectfont}
+\newcommand{\UseNoteFont}{\UseHeadingFont\fontsize{11pt}{12.1pt}\selectfont}
+\newcommand{\UseTitleFont}{\UseHeadingFont\fontsize{31pt}{36pt}\selectfont\bfseries}
+\newcommand{\UseSubTitleFont}{\normalfont\fontsize{11.6pt}{12.8pt}\selectfont}
+\newcommand{\UseSectionFont}{\UseHeadingFont\fontsize{12pt}{13.5pt}\selectfont\bfseries}
+\newcommand{\UseSubSectionFont}{\UseHeadingFont\fontsize{11.6pt}{12.8pt}\selectfont\bfseries}
+\newcommand{\UseDetailFont}{\normalfont\fontsize{11.6pt}{12.8pt}\selectfont}
 
 % Symbols (Unicode).
 % See: https://unicode-table.com/en/
