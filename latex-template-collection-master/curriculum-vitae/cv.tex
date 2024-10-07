@@ -1,46 +1,33 @@
 \documentclass[11pt,a4paper, final]{moderncv}
-
 \usepackage{color}
 \usepackage{fontspec}
 \moderncvtheme{classic}
-
 % the (custom) color which will be used in the cv
 \definecolor{color1}{RGB}{1, 52, 64}
-
 % scale the page layout
-\usepackage[scale=0.95]{geometry}
-
+\usepackage[scale=0.97]{geometry}
 % change width of the column with the dates
 \setlength{\hintscolumnwidth}{3.5cm} 
-
 % required when changing page layout lengths
 \AtBeginDocument{\recomputelengths} 
 \usepackage{xunicode}
 \usepackage{xltxtra}
 \usepackage[utf8]{inputenc}
-
 % german word break/hyphenation rules
 \usepackage[ngerman]{babel}
-
 % insert dummy text (used in the letter)
 \usepackage{lipsum} 
-
 % used for \begin{comment}...\end{comment}
 \usepackage{verbatim} 
-
 % use guilllemets in bibliography
 \usepackage[babel,german=guillemets]{csquotes}
-
 \usepackage[
 	sorting=none,
 	minbibnames=8,
 	maxbibnames=9,
 	block=space
 ]{biblatex}
-
 \bibliography{publications}
-
-
 % get rid of the number-labels ([1], [2], etc.) in front of publications
 \defbibenvironment{midbib}
 {\list
@@ -53,8 +40,6 @@
 	}
 	{\endlist}
 {\item}
-
-
 % add [DOI] and [PDF] fields at the end of each publication entry
 \DeclareSourcemap{
 	\maps[datatype=bibtex]{
@@ -70,7 +55,6 @@
 		}
 	}
 }
-
 % [DOI] entries in publication
 \DeclareFieldFormat{usera}{\color{color1}[\href{#1}{\textsc{doi}}]}
 \AtEveryBibitem{
@@ -82,15 +66,12 @@
 			% you could e.g. display a default thing here.
 		}{\space\printfield{usera}}}
 }
-
 % [PDF] entries in publication
 \DeclareFieldFormat{userb}{\color{color1}[\href{#1}{\textsc{pdf}}]}
-
 \AtEveryBibitem{
 	% put [DOI] stuff at the end of a publication entry
 	\csappto{blx@bbx@\thefield{entrytype}}{\iffieldundef{userb}{}{\printfield{userb}}}
 }
-
 \renewcommand*{\mkbibnamegiven}[1]{%
 	\ifitemannotation{highlight}
 	{\textbf{#1}}
@@ -101,28 +82,22 @@
 	{\textbf{#1}}
 	{#1}
 }
-
-
 % Minion Pro is used as the main font, if you don't
 % have it installed uncomment this line or choose another pretty font
 \setmainfont[Numbers=OldStyle]{Times New Roman}
-
 % the moderncv package will populate a lot of the pdf meta-information.
 % this can be used to change some of these infos.
 \AfterPreamble{\hypersetup{
   pdfcreator={XeLaTeX},
   pdftitle={Fictional CV of Hai Jiang}
 }}
-
 % for the icons (telephone, globe). i found the icons provided by the
 % fontawesome package prettier than the standard moderncv icons.
 \usepackage{fontawesome5}
-
 % personal data
 \firstname{Hai}
 \familyname{Jiang}
-\address{Baoan District, Shenzhen, China}{}
-
+\address{Baoan District, Shenzhen, Guangdong, China}{}
 % i use the extrainfo command for additional information, since i 
 % want to use custom icons and have finer control over spacing.
 \extrainfo{
@@ -130,24 +105,23 @@
 	{\small\faEnvelope}\hspace{0.3em}pigejianghai97@gmail.com%\\
 	% \faGlobe\hspace{0.3em}http://isaac.asimov.com
 }
-
 % picture, resized to a height of 84pt
-\photo[134pt]{picture/XFOB5134}
-
+\photo[100pt]{picture/photo}
 % spacing before (sub)sections
 \newcommand{\spacesection}{\vspace{0.4cm}}
 \newcommand{\spacesubsection}{\vspace{0.2cm}}
-
-
 %===========================
 \begin{document}
-
 \recipient{Motivation Letter}{}%{Shenzhen\\Guangdong\\China} 
 \date{\today}
 \opening{To whom it may concern,} %Dear Prof. Dr. Hussam Amrouch,
 \closing{Sincerely,}
 \enclosure[Attached]{curriculum vit\ae{}}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \makelettertitle
 I am writing to apply for the PhD posotion focusing on the Big Model in the Artificial Intelligence at your university.
 \ \\
