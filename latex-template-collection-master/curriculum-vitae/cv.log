@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.1.21)  27 SEP 2024 12:53
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.1.21)  7 OCT 2024 12:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1086,9 +1086,9 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (
 ]
 \makecvheaddetailsbox=\box73
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 216.
+(Font)              <7> on input line 228.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 216.
+(Font)              <5> on input line 228.
 \makecvheadpicturebox=\box74
 File: picture/XFOB5134.jpg Graphic file (type bmp)
 <picture/XFOB5134.jpg>
@@ -1096,23 +1096,25 @@ File: picture/XFOB5134.jpg Graphic file (type bmp)
 \makecvheadpicturewidth=\skip121
 \makecvheadnamebox=\box75
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/sl' in size <10.95> not available
-(Font)              Font shape `TU/TimesNewRoman(0)/m/it' tried instead on input line 222.
+(Font)              Font shape `TU/TimesNewRoman(0)/m/it' tried instead on input line 229.
+LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/b/sl' in size <10.95> not available
+(Font)              Font shape `TU/TimesNewRoman(0)/b/it' tried instead on input line 229.
  [2
 
-] [3] [4] (./cv.aux)
+] [3] (./cv.aux)
 Package rerunfilecheck Info: File `cv.out' has not changed.
-(rerunfilecheck)             Checksum: 5D2848B4268256A082889F21716E55DE;3404.
+(rerunfilecheck)             Checksum: 9BA1D6779E94BD198CE745CE026C1A18;2765.
 Package logreq Info: Writing requests to 'cv.run.xml'.
 \openout1 = `cv.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 38892 strings out of 476683
- 774261 string characters out of 5801401
- 1875012 words of memory out of 5000000
- 58537 multiletter control sequences out of 15000+600000
- 515674 words of font info for 78 fonts, out of 8000000 for 9000
+ 38906 strings out of 476683
+ 774766 string characters out of 5801401
+ 1871012 words of memory out of 5000000
+ 58548 multiletter control sequences out of 15000+600000
+ 515698 words of font info for 81 fonts, out of 8000000 for 9000
  1350 hyphenation exceptions out of 8191
- 129i,11n,122p,1059b,3863s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 129i,12n,122p,1059b,3863s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on cv.pdf (4 pages).
+Output written on cv.pdf (3 pages).
