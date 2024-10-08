@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.1.21)  7 OCT 2024 18:32
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.1.21)  8 OCT 2024 16:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1086,28 +1086,22 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (
 ]
 \makecvheaddetailsbox=\box73
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 202.
+(Font)              <7> on input line 199.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 202.
+(Font)              <5> on input line 199.
 \makecvheadpicturebox=\box74
 \makecvheaddetailswidth=\skip120
 \makecvheadpicturewidth=\skip121
 \makecvheadnamebox=\box75
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/sl' in size <10.95> not available
-(Font)              Font shape `TU/TimesNewRoman(0)/m/it' tried instead on input line 203.
+(Font)              Font shape `TU/TimesNewRoman(0)/m/it' tried instead on input line 200.
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/b/sl' in size <10.95> not available
-(Font)              Font shape `TU/TimesNewRoman(0)/b/it' tried instead on input line 203.
+(Font)              Font shape `TU/TimesNewRoman(0)/b/it' tried instead on input line 200.
  [2
 
 ] [3] (./cv.aux)
-
-Package rerunfilecheck Warning: File `cv.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `cv.out':
-(rerunfilecheck)             Before: 9BA1D6779E94BD198CE745CE026C1A18;2765
-(rerunfilecheck)             After:  A8099974753221F11B988A97BD318E61;2755.
+Package rerunfilecheck Info: File `cv.out' has not changed.
+(rerunfilecheck)             Checksum: A8099974753221F11B988A97BD318E61;2755.
 Package logreq Info: Writing requests to 'cv.run.xml'.
 \openout1 = `cv.run.xml'.
 
