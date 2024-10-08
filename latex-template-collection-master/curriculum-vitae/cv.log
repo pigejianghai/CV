@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.1.21)  8 OCT 2024 16:02
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.1.21)  8 OCT 2024 16:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1101,7 +1101,7 @@ LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/b/sl' in size <10.95> not av
 
 ] [3] (./cv.aux)
 Package rerunfilecheck Info: File `cv.out' has not changed.
-(rerunfilecheck)             Checksum: A8099974753221F11B988A97BD318E61;2755.
+(rerunfilecheck)             Checksum: 2BE236FDD38588C176C0A23D9E6F60F7;2740.
 Package logreq Info: Writing requests to 'cv.run.xml'.
 \openout1 = `cv.run.xml'.
 
