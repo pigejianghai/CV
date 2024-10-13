@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.1.21)  11 OCT 2024 16:16
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.1.21)  13 OCT 2024 15:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1054,8 +1054,14 @@ LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/b/sl' in size <10.95> not av
  [2
 
 ] [3] (./cv.aux)
-Package rerunfilecheck Info: File `cv.out' has not changed.
-(rerunfilecheck)             Checksum: EE5AD3319EAC24625EDF20CA345F34AC;1983.
+
+Package rerunfilecheck Warning: File `cv.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `cv.out':
+(rerunfilecheck)             Before: 03723005CED1B703FE462EE8BF28A654;2200
+(rerunfilecheck)             After:  C59D5862BAEE96B6D04F975E1FB1C5E6;2342.
 Package logreq Info: Writing requests to 'cv.run.xml'.
 \openout1 = `cv.run.xml'.
 
@@ -1063,7 +1069,7 @@ Package logreq Info: Writing requests to 'cv.run.xml'.
 Here is how much of TeX's memory you used:
  37266 strings out of 476683
  745719 string characters out of 5801401
- 1871012 words of memory out of 5000000
+ 1879012 words of memory out of 5000000
  56954 multiletter control sequences out of 15000+600000
  515706 words of font info for 82 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
