@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.1.21)  15 OCT 2024 18:43
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.1.21)  15 OCT 2024 19:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1040,17 +1040,17 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (
 ]
 \makecvheaddetailsbox=\box73
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 201.
+(Font)              <7> on input line 202.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 201.
+(Font)              <5> on input line 202.
 \makecvheadpicturebox=\box74
 \makecvheaddetailswidth=\skip120
 \makecvheadpicturewidth=\skip121
 \makecvheadnamebox=\box75
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/sl' in size <10.95> not available
-(Font)              Font shape `TU/TimesNewRoman(0)/m/it' tried instead on input line 202.
+(Font)              Font shape `TU/TimesNewRoman(0)/m/it' tried instead on input line 203.
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/b/sl' in size <10.95> not available
-(Font)              Font shape `TU/TimesNewRoman(0)/b/it' tried instead on input line 202.
+(Font)              Font shape `TU/TimesNewRoman(0)/b/it' tried instead on input line 203.
  [2
 
 ] [3] (./cv.aux)
