@@ -1,95 +1,185 @@
-\documentclass{xetex-letter}
+\documentclass[11pt,a4paper, final]{moderncv}
+\usepackage{color}
+\usepackage{fontspec}
+\moderncvtheme{classic}
+% the (custom) color which will be used in the cv
+\definecolor{color1}{RGB}{1, 52, 64}
+% scale the page layout
+\usepackage[scale=0.95]{geometry}
+% change width of the column with the dates
+\setlength{\hintscolumnwidth}{3.5cm} 
+% required when changing page layout lengths
+\AtBeginDocument{\recomputelengths} 
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\usepackage[utf8]{inputenc}
+% german word break/hyphenation rules
+% \usepackage[ngerman]{babel}
+% insert dummy text (used in the letter)
+\usepackage{lipsum} 
+% used for \begin{comment}...\end{comment}
+\usepackage{verbatim} 
+% use guilllemets in bibliography
+% \usepackage[babel,german=guillemets]{csquotes}
+% \usepackage[
+% 	sorting=none,
+% 	minbibnames=8,
+% 	maxbibnames=9,
+% 	block=space
+% ]{biblatex}
+% \bibliography{publications}
+% % get rid of the number-labels ([1], [2], etc.) in front of publications
+% \defbibenvironment{midbib}
+% {\list
+% 	{}
+% 	{
+% 		\setlength{\leftmargin}{0mm}
+% 		\setlength{\itemindent}{-\leftmargin}
+% 		\setlength{\itemsep}{\bibitemsep}
+% 		\setlength{\parsep}{\bibparsep}}
+% 	}
+% 	{\endlist}
+% {\item}
+% % add [DOI] and [PDF] fields at the end of each publication entry
+% \DeclareSourcemap{
+% 	\maps[datatype=bibtex]{
+% 		% the bibtex entry 'mydoi' gets mapped to 'usera'
+% 		\map{
+% 			\step[fieldsource=mydoi]
+% 			\step[fieldset=usera, origfieldval]
+% 		}
+% 		% the bibtex entry 'mypdf' gets mapped to 'usera'
+% 		\map{
+% 			\step[fieldsource=mypdf]
+% 			\step[fieldset=userb, origfieldval]
+% 		}
+% 	}
+% }
+% % [DOI] entries in publication
+% \DeclareFieldFormat{usera}{\color{color1}[\href{#1}{\textsc{doi}}]}
+% \AtEveryBibitem{
+% 	% put [DOI] stuff at the end of a publication entry
+% 	\csappto{blx@bbx@\thefield{entrytype}}{% 
+% 		\iffieldundef{usera}{ 
+% 			% this gets invoked, once nothing is supplied
+% 			% via the mypdf or mydoi value.
+% 			% you could e.g. display a default thing here.
+% 		}{\space\printfield{usera}}}
+% }
+% % [PDF] entries in publication
+% \DeclareFieldFormat{userb}{\color{color1}[\href{#1}{\textsc{pdf}}]}
+% \AtEveryBibitem{
+% 	% put [DOI] stuff at the end of a publication entry
+% 	\csappto{blx@bbx@\thefield{entrytype}}{\iffieldundef{userb}{}{\printfield{userb}}}
+% }
+% \renewcommand*{\mkbibnamegiven}[1]{%
+% 	\ifitemannotation{highlight}
+% 	{\textbf{#1}}
+% 	{#1}}
 
+% 	\renewcommand*{\mkbibnamefamily}[1]{%
+% 	\ifitemannotation{highlight}
+% 	{\textbf{#1}}
+% 	{#1}
+% }
 % Minion Pro is used as the main font, if you don't
 % have it installed uncomment this line or choose another pretty font
 \setmainfont[Numbers=OldStyle]{Times New Roman}
-
-% senders personal data
-\def \first {Hai}
-\def \last {Jiang}
-\def \street {Shenzhen}
-\def \city {Guangdong, China}
-
-% recipient
-\def \recipientHighlight {Motivation Letter}
-\def \recipientRest {Shenzhen \\ Guangdong \\ China}
-
-% just for the blindtext
-\usepackage{lipsum} 
-
-\usepackage{polyglossia}
-\setmainlanguage{english}
-
+% the moderncv package will populate a lot of the pdf meta-information.
+% this can be used to change some of these infos.
+\AfterPreamble{\hypersetup{
+  pdfcreator={XeLaTeX},
+  pdftitle={Fictional CV of Hai Jiang}
+}}
+% for the icons (telephone, globe). i found the icons provided by the
+% fontawesome package prettier than the standard moderncv icons.
+% \usepackage{fontawesome5}
+% personal data
+\firstname{Hai}
+\familyname{Jiang}
+\address{Shenzhen, Guangdong, China}{}
+% i use the extrainfo command for additional information, since i 
+% want to use custom icons and have finer control over spacing.
+\extrainfo{
+	\faPhone\hspace{0.5em}+86 19867713757\\
+	{\small\faEnvelope}\hspace{0.5em}jiangh14@lzu.edu.cn%\\
+	% \faGlobe\hspace{0.3em}http://isaac.asimov.com
+}
+% picture, resized to a height of 84pt
+% \photo[74pt]{picture/standard}
+% spacing before (sub)sections
+\newcommand{\spacesection}{\vspace{0.4cm}}
+\newcommand{\spacesubsection}{\vspace{0.2cm}}
+%===========================
 \begin{document}
-
-% to show the folding marks
-\foldingmarks
-
-\letterstart
-
-\salutation{Dear Sir or Madam,}
-
-% \lipsum[1-2]
-I am writing to apply for the PhD posotion focusing on the Big Model in the Artificial Intelligence at your university.
+\recipient{Motivation Letter}{}%{Shenzhen\\Guangdong\\China} 
+\date{\today}
+\opening{To whom it may concern,} %Dear Prof. Dr. Hussam Amrouch,
+\closing{Sincerely,}
+\enclosure[Attached]{curriculum vit\ae{}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\makelettertitle
+I am writing to apply for the PhD position at your university,
+which focuses on Computer Vision in Artificial Intelligence (AI). 
+With a strong background in Deep Learning and a passion for AI, 
+I believe that my academic journey and research experience 
+has uniquely prepared me to contribute to and grow within your esteemed research group.
 \ \\
 \ \\
 With a deep-seated passion for Computer Science and Mathematics, 
 I began my studies in Computational Mathematics in 2019 after earning my Bachelor's degree in Information Security in China.
-While focusing on Deep Learning technology, I participated in a research project aimed at imitating personal handwriting styles.
+While focusing on Deep Learning technology, I participated in a research project to imitate personal handwriting styles.
 The project involved learning the Chinese handwritten style of Shiing Shen Chern from approximately 220 characters.
 Through this experience, I gained knowledge of Generative Adversarial Networks 
 and developed skills in manuscript searching, data preprocessing, and code replication.
-As a result, I completed my Master's thesis on the personalized imitation of Chinese handwritten characters using GANs.
+As a result, I completed my Master's thesis \emph{“GANs based Personal style imitation of Chinese handwritten characters.”}
 \ \\
 \ \\
-Furthermore, to integrate Deep Learning with numerical approximation theory, 
-I participated in the Compressed Sensing MRI ADMM-Net project.
-Traditional numerical algorithms perform well on simple images, 
-but they fail to preserve detailed information after numerous iterations.
+Furthermore, I participated in the Compressed Sensing MRI ADMM-Net project 
+to integrate Deep Learning with numerical approximation theory. 
+Traditional numerical algorithms perform well on simple images 
+but fail to preserve detailed information after numerous iterations.
 With advancements in Deep Learning, 
 many researchers have employed Convolutional Neural Networks to unfold equations 
 and automatically adjust parameters during iterations to preserve details. 
-Through this project, I gained knowledge of convergent algorithm theory and proofs, 
-as well as the integration process with Deep Learning. 
+Through this project, I gained knowledge of convergent algorithm theory and proofs 
+and the integration process with Deep Learning. 
 This experience significantly enhanced my skills in both programming and theoretical understanding.
 \ \\
 \ \\
 After earning my Master's Degree in Computational Mathematics, 
-I worked as a Research Assistant in a group at Sun Yat-sen University dedicated to Computer-Assisted Intervention. 
+I worked as a Research Assistant in a group at Sun Yat-sen University dedicated to Computer-Assisted Diagnosis. 
 During my tenure, I participated in proposal writing 
 for a key program from the Science and Technology of China (2023YFE0204300, which was successfully approved). 
-I also completed two progress reports and the completion report for projects funded 
+I also completed two progress reports and two completion reports for projects funded 
 by the National Natural Science Foundation of China (Grants 81971691 and 12126610). 
 Additionally, I wrote the technological specifications for a patent application and a medical device application. 
 Over the past two years, I have contributed to three projects focused on 
 diagnosing Placenta Accreta Spectrum Disorders, 
 predicting metastasis in Axillary Sentinel Lymph Nodes, 
 and predicting the response to Neoadjuvant Chemotherapy based on MRI. 
-The first two projects yielded excellent experimental results but lacked technological novelty. 
-Throughout these tasks, I developed skills in programming (Python, PyTorch, and TensorFlow) and manuscript reading.
+The first two projects yielded excellent experimental results but needed more technological novelty. 
+Throughout these tasks, I consolidated skills in programming (Python, PyTorch, TensorFlow, etc.) and manuscript reading.
 \ \\
 \ \\
-I believe that the PhD position in your research unit will be a life-changing experience to 
-achieve the career I aspire for. 
-Your research field the Machine Learning Mechanism are aligned my core interests. 
-I am genuinely committed to investigating pragmatic ways to 
-maximize use of Engineering and Computer Science. 
+My ultimate goal is to pursue a career in academia, where I can contribute to advancing knowledge in Computer Science. 
+Your research and your team align with my interests and my goals. 
+The PhD position in your group will provide me with 
+the intellectual environment and cutting-edge resources necessary to achieve this goal.
 % On the contrary, the 
 \ \\
 \ \\
-I am confident that I can thrive as a promising candidate for this PhD position. 
-My academic background and program experience, along with my personal skills, 
-demonstrate my compatibility with this program. 
-In summary, I have acquired extensive knowledge and skills in Computer Science and Computational Mathematics. 
-Additionally, my research in Deep Learning, Medical Science, 
-and Mathematics has equipped me to be a competent team player.
-\ \\
-\ \\
-Thank you for considering my application. 
-I look forward to embarking on my next academic journey at your university.
-\closing{Sincerely,}
-\enclosure[Attached]{curriculum vit\ae{}}
+My academic background, research experience, 
+and personal skills make me a strong candidate for this PhD position. 
+I am eager to contribute to and grow within your research community, 
+and I look forward to the possibility of discussing my application further.
+% \ \\
+% \ \\
+% Until then, I am grateful for the opportunity to apply to this institution, 
+% and I am ready to discuss my future with you should my candidacy prove successful.
 
-\letterend
-
-\end{document}
+\makeletterclosing
