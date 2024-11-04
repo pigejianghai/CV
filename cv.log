@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.1.21)  4 NOV 2024 12:17
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.1.21)  4 NOV 2024 13:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1051,12 +1051,7 @@ LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/sl' in size <10.95> not av
 (Font)              Font shape `TU/TimesNewRoman(0)/m/it' tried instead on input line 207.
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/b/sl' in size <10.95> not available
 (Font)              Font shape `TU/TimesNewRoman(0)/b/it' tried instead on input line 207.
-
-Underfull \hbox (badness 1057) in paragraph at lines 257--257
-[]|\TU/TimesNewRoman(0)/m/n/10.95 Submitted to MICCAI2024; in Revising; \TU/TimesNewRoman(0)/m/it/10.95 “Space-squeeze method for Multi-class classification of
- []
-
-[2
+ [2
 
 ] [3] (./cv.aux)
 Package rerunfilecheck Info: File `cv.out' has not changed.
