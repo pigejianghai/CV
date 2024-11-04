@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.1.21)  1 NOV 2024 19:16
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.1.21)  4 NOV 2024 12:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1051,21 +1051,32 @@ LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/sl' in size <10.95> not av
 (Font)              Font shape `TU/TimesNewRoman(0)/m/it' tried instead on input line 207.
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/b/sl' in size <10.95> not available
 (Font)              Font shape `TU/TimesNewRoman(0)/b/it' tried instead on input line 207.
- [2
+
+Underfull \hbox (badness 1057) in paragraph at lines 257--257
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Submitted to MICCAI2024; in Revising; \TU/TimesNewRoman(0)/m/it/10.95 “Space-squeeze method for Multi-class classification of
+ []
+
+[2
 
 ] [3] (./cv.aux)
-Package rerunfilecheck Info: File `cv.out' has not changed.
-(rerunfilecheck)             Checksum: 340E21FC5756856D99E529F2B5957D1A;2215.
+
+Package rerunfilecheck Warning: File `cv.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `cv.out':
+(rerunfilecheck)             Before: 7478695AF0DF8E2744C9F736F1A6627C;1859
+(rerunfilecheck)             After:  34F1666E1446BC128A349D6B42D422D9;1890.
 Package logreq Info: Writing requests to 'cv.run.xml'.
 \openout1 = `cv.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 37269 strings out of 476683
- 745857 string characters out of 5801401
- 1877012 words of memory out of 5000000
- 56956 multiletter control sequences out of 15000+600000
- 515714 words of font info for 83 fonts, out of 8000000 for 9000
+ 37259 strings out of 476683
+ 745444 string characters out of 5801401
+ 1880012 words of memory out of 5000000
+ 56949 multiletter control sequences out of 15000+600000
+ 515690 words of font info for 80 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  129i,12n,122p,1059b,801s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
