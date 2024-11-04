@@ -1,0 +1,367 @@
+\documentclass[11pt,a4paper, final]{moderncv}
+\usepackage{color}
+\usepackage{fontspec}
+\moderncvtheme{classic}
+\definecolor{color1}{RGB}{1, 52, 64}
+\usepackage[scale=0.95]{geometry}
+\setlength{\hintscolumnwidth}{3.5cm} 
+\AtBeginDocument{\recomputelengths} 
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\usepackage[utf8]{inputenc}
+\usepackage{lipsum} 
+\usepackage{verbatim}
+\usepackage[
+	sorting=none,
+	minbibnames=8,
+	maxbibnames=9,
+	block=space
+]{biblatex}
+\bibliography{publications}
+\defbibenvironment{midbib}
+{\list
+	{}
+	{
+		\setlength{\leftmargin}{0mm}
+		\setlength{\itemindent}{-\leftmargin}
+		\setlength{\itemsep}{\bibitemsep}
+		\setlength{\parsep}{\bibparsep}}
+	}
+	{\endlist}
+{\item}
+\DeclareSourcemap{
+	\maps[datatype=bibtex]{
+		\map{
+			\step[fieldsource=mydoi]
+			\step[fieldset=usera, origfieldval]
+		}
+		\map{
+			\step[fieldsource=mypdf]
+			\step[fieldset=userb, origfieldval]
+		}
+	}
+}
+\DeclareFieldFormat{usera}{\color{color1}[\href{#1}{\textsc{doi}}]}
+\AtEveryBibitem{
+	\csappto{blx@bbx@\thefield{entrytype}}{% 
+		\iffieldundef{usera}{ 
+			% this gets invoked, once nothing is supplied
+			% via the mypdf or mydoi value.
+			% you could e.g. display a default thing here.
+		}{\space\printfield{usera}}}
+}
+\DeclareFieldFormat{userb}{\color{color1}[\href{#1}{\textsc{pdf}}]}
+\AtEveryBibitem{
+	\csappto{blx@bbx@\thefield{entrytype}}{\iffieldundef{userb}{}{\printfield{userb}}}
+}
+\renewcommand*{\mkbibnamegiven}[1]{%
+	\ifitemannotation{highlight}
+	{\textbf{#1}}
+	{#1}}
+
+	\renewcommand*{\mkbibnamefamily}[1]{%
+	\ifitemannotation{highlight}
+	{\textbf{#1}}
+	{#1}
+}
+\setmainfont[Numbers=OldStyle]{Times New Roman}
+\AfterPreamble{\hypersetup{
+  pdfcreator={XeLaTeX},
+  pdftitle={Fictional CV of Hai Jiang}
+}}
+\usepackage{fontawesome5}
+\firstname{Hai}
+\familyname{Jiang}
+\address{Shenzhen, Guangdong, China}{}
+\extrainfo{
+	\faPhone\hspace{0.5em}+86 19867713757\\
+	{\small\faEnvelope}\hspace{0.5em}jiangh14@lzu.edu.cn
+}
+\newcommand{\spacesection}{\vspace{0.4cm}}
+\newcommand{\spacesubsection}{\vspace{0.2cm}}
+%===========================
+\begin{document}
+\recipient{Motivation Letter}{}
+\date{\today}
+\opening{To whom it may concern,}
+\closing{Sincerely,}
+\enclosure[Attached]{curriculum vit\ae{}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\makelettertitle
+I am writing to express my interest in the PhD position at your university, 
+specializing in Computer Vision within Artificial Intelligence (AI). 
+With a solid foundation in Deep Learning and a genuine passion for advancing AI research, 
+I am confident that my academic background and research experience uniquely position me 
+to contribute to and thrive within your esteemed research group. 
+\ \\
+\ \\
+Driven by a deep-seated interest in Computer Science and Mathematics, 
+I pursued my studies in Computational Mathematics in 2019 
+after completing a Bachelor's degree in Information Security in China. 
+During my Master's program, I focused on Deep Learning, 
+particularly within the context of style imitation in handwriting. 
+I contributed to a project aimed at replicating individual handwriting styles, 
+specifically emulating the Chinese handwritten characters of Shiing Shen Chern from a set of approximately 220 characters. 
+This project provided me with hands-on experience in Generative Adversarial Networks (GANs), 
+manuscript research, data preprocessing, and code replication, 
+culminating in my Master's thesis titled, \emph{“GANs based Personal style imitation of Chinese handwritten characters.”}
+\ \\
+\ \\
+Following this, I had the opportunity to work on the Compressed Sensing MRI ADMM-Net project, 
+which integrated Deep Learning with numerical approximation theory. 
+Traditional algorithms often struggle with complex images, losing intricate details after multiple iterations. 
+By leveraging Convolutional Neural Networks (CNNs), 
+our team explored how Deep Learning could dynamically adjust parameters during iterations to preserve these details. 
+Through this project, I gained valuable insights into convergent algorithm theory, 
+proof construction, and the synergy between theory and practical application. 
+This experience deepened my understanding of algorithmic approaches and refined my programming skills. 
+\ \\
+\ \\
+After earning my Master's degree in Computational Mathematics, 
+I joined a research group at Sun Yat-sen University focused on Computer-Assisted Diagnosis, 
+where I served as a Research Assistant. 
+My responsibilities included contributing to a successful proposal for 
+a key Science and Technology program in China (2023YFE0204300), 
+preparing progress and completion reports for projects funded by 
+the National Natural Science Foundation of China (Grants 81971691 and 12126610), 
+and drafting technical specifications for a patent and a medical device application. 
+In particular, I participated in three significant research projects addressing medical challenges 
+such as diagnosing Placenta Accreta Spectrum Disorders, 
+predicting metastasis in Axillary Sentinel Lymph Nodes, and assessing responses to Neoadjuvant Chemotherapy via MRI. 
+Although the first two projects achieved strong experimental results, 
+they highlighted areas where further technological innovation could be explored. 
+Through these experiences, I honed my skills in programming languages 
+such as Python, PyTorch, and TensorFlow, as well as in manuscript research.
+\ \\
+\ \\
+My long-term goal is to pursue a career in academia, 
+where I can contribute meaningfully to the advancement of knowledge in Computer Science and AI. 
+Your research group's work aligns closely with my own academic and professional ambitions, 
+making this PhD position an ideal step toward my aspirations. 
+I am eager to join an environment that provides both the intellectual rigor and resources essential to achieving my goals.
+\ \\
+\ \\
+I am enthusiastic about the possibility of joining your research community, 
+where I hope to contribute actively while further developing my expertise. 
+Thank you for considering my application. 
+I look forward to the opportunity to discuss how my background, skills, and goals align with your program.
+
+\makeletterclosing
+
+\clearpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\maketitle
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{\textbf{Education}}
+	\cventry{\textbf{2019--2022}}{Master of Science in Computational Mathematics}{\textbf{Nankai University}}{\textbf{Tianjin}}{\textbf{China}}{}
+	\cvline{\textbf{Thesis}}
+	{\emph{GANs based Personal style imitation of Chinese handwritten characters}}
+	\cvline{\textbf{Advisors}}
+	{Prof.~Yunhua~Xue, Prof.~Chunlin~Wu}
+	\cvline{\textbf{Related Courses}}
+	{Approximation Theory and Methods, Numerical Optimization, Convex Analysis, 
+	Variational Analysis, Real Analysis, Functional Analysis, Matrix Computation, 
+	Foundations of Measure Theory and Probability, Numerical Solutions of Partial Differential Equations, and more.}
+	\cvline{\textbf{Cumulative GPA}}
+	{2.95/4.00}
+	\cventry{\textbf{2014--2018}}{Bachelor of Engineering in Information Security}{\textbf{Lanzhou University}}{\textbf{Lanzhou}}{\textbf{China}}{}
+	\cvline{\textbf{Thesis}}
+	{\emph{Improved Upper Bounds of Roman Domination Number in Maximal Outerplanar Graphs}}
+	\cvline{\textbf{Advisor}}
+	{Prof.~Zepeng~Li}
+	\cvline{\textbf{Related Courses}}
+	{Discrete Mathematics, Operating Systems, Data Structures, C and C++ Programming Lab, 
+	Java Programming Lab, Database Theory and Lab, Computer Organization and Design, and more.}
+	\cvline{\textbf{Cumulative GPA}}
+	{4.15/5.00}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{\textbf{Research Experience II}, Sun Yat-sen University}
+	\cventry{\textbf{11.2022--07.2024}}{Research Assistant}{Computational Medical Image Laboratory}
+	{}{}{School of Computer Science and Engineering}
+	\cvline{Programme}
+	{China Department of Science and Technology Key Grant, focused on Breast Cancer, 
+	aims to develop models with clinical interpretability and generalization.}
+	\cvline{Supervisors}{Prof.~Yao~Lu, Dr.~Ting~Song}
+	\cvline{Project Focus}{Placenta Accreta Spectrum Disorders, T2-WI MRI, Prenatal Diagnosis, Multi-class classification.}
+	\cvline{Experience and Skills}{Literature research, data preprocessing, model building (programming), research paper writing.}
+	\cvline{Publication}
+	{Submitted to ISBI 2025; Under Review; 
+	\emph{“Anatomy-guided Multitask Learning for MRI-based Classification of Placenta Accreta Spectrum and its Subtypes.”}}
+	\cventry{\textbf{12.2023--01.2024}}{Research Assistant}{Computational Medical Image Laboratory}
+	{}{}{School of Computer Science and Engineering}
+	\cvline{Programme}
+	{National Natural Science Foundation of China, focused on Breast Cancer, 
+	aimed to develop a prediction model for the Chinese female population mainly with FFDM and US.}
+	\cvline{Supervisors}{Prof.~Yao~Lu, Dr.~Xiang~Zhang}
+	\cvline{Project Focus}{Breast Cancer, Dual-Energy CT, Sentinel Lymph Nodes, Metestatic status, Multi-class classification.}
+	\cvline{Experience and Skills}
+	{The first comprehensive research experience encompassed conducting literature reviews, designing experiments, 
+	writing research papers, and working with the TensorFlow framework.}
+	\cvline{Publication}
+	{Submitted to MICCAI2024; in Revising; 
+	\emph{“Space-Squeeze Method for Multi-Class Classification of Metastatic Lymph Nodes in Breast Cancer.”}}
+% \subsection{Multi-view based Atypical Architectural Distortion Detection of Breast Cancer}
+% \cventry{\textbf{08.2022--03.2023}}
+% {Advisor: Yao Lu, Cooperator: Gary Pan}
+% {Sun Yat-sen University}
+% {Submitted to the Journal of Physics in Medicine and Biology}{Accepted}
+% {
+% ■	A task of the project National Natural Science Foundation of China(NSFC) under Grant 12126610, is in progress. 
+% The project aimed to develop a personalized prediction model for early breast cancer prevention in the Chinese female population. \\
+% ■	The task aims to detect the breast architectural distortion based on the DBT(Digital Breast Tomosynthesis) volume with two different angles. 
+% Inspired by the Siamese-Networks initially used in face recognition, the task utilized the Siamese architecture to extract and compare information from both views. 
+% Experimental results show that the corresponding triplet module did help the False-Positive reduction from two angles.\\
+% ■	My involvement in the project focused on preparatory works including providing ideas and consultation.\\
+% ■	I gained my knowledge in multiple machine learning methods, 
+% including automatic assessment of architectural distortion, detection technology in deep learning, et al.\\
+% }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{\textbf{Research Experience I}, Nankai University}
+	\cventry{\textbf{01.2022--06.2022}}{Research Student}{Image Analysis Team}
+	{}{}{School of Mathematics and Sciences}
+	\cvline{Project}
+	{ADMM model from the manuscript “Deep ADMM-Net for Compressed-Sensing MRI.”}
+	\cvline{Supervisors}{Prof.~Chunlin~Wu, Prof.~Yunhua~Xue}
+	\cvline{Focus}{Compressed-sensing Theory, Iterative Equations, Neural Networks, MRI reconstruction.}
+	\cvline{Experience and Skills}
+	{The second programming experience involved proving mathematical equations and applying Deep Learning techniques. 
+	I reproduced the iterative mathematical equations using C++, Python, and PyTorch.}
+	\cventry{\textbf{01.2021--04.2021}}{Research Student}{Image Analysis Team}
+	{}{}{School of Mathematics and Sciences}
+	\cvline{Project}
+	{ROF-model from the manuscript “Nonlinear Total Variation Based Noise Removal Algorithms.”}
+	\cvline{Supervisor}{Prof.~Yunhua~Xue}
+	\cvline{Focus}{Image Restoration, Denoise, PDE, Total-Variation Penalty.}
+	\cvline{Experience and Skills}
+	{Numerical experiments used both C++ and Python to build the ROF model.}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \newpage
+% \spacesection
+\section{\textbf{Other Work Experience}}
+	\subsection{\textbf{Funding}}
+		\cvline{\textbf{Proposal}}
+		{Proposal Writing; Accepted; China Department of Science and Technology Key Grant 2023YFE0204300.}
+		\cvline{\textbf{Report}}
+		{Finished two Completion Reports and two Progress Reports; Succeeded; NSFC Grant 81971697, 12126610.}
+		% \spacesubsection
+	\subsection{\textbf{Specification}}
+		\cvline{\textbf{Patent}}
+		{1 Patent Application Specification; under review.}
+		\cvline{\textbf{Device}}
+		{1 Medical Device Application Specification; under review.}
+		% \spacesubsection
+	\subsection{\textbf{Teaching Assistant}}
+		\cvline{\textbf{Courses}}{Calculus; Mathematical Analysis}
+		\cvline{\textbf{Thesis}}{\emph{Breast Cancer Classification Method Based on Dual-Energy CT Images}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \spacesection
+\section{\textbf{Language Proficiency}}
+		\cvline{\textbf{Mandarin}}{Native Speaker}
+		\cvline{\textbf{English}}{IELTS 6.5; CET6 476/710; CET4 544/710; Fluent(speaking, reading, writing).}
+		\cvline{\textbf{Cantonese}}{Intermediate}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{\textbf{Skills}}
+		\cvline{\textbf{Technical}}{Python, PyTorch, Tensorflow, C/C++, {\LaTeX}, MATLAB, Mathematics}
+		\cvline{\textbf{Other}}{Linux (Ubuntu), Microsoft Office, Adobe Photoshop}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \spacesection
+\section{\textbf{Interest}}
+		\cvline{}{Artificial Intelligence; Mathematics; Physics}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \spacesection
+\section{\textbf{Awards}}
+	\cvline{\textbf{2014 -- 2018}}
+		{Four-time recipient of the Third-Class Merit Scholarship for Academic Excellence at Lanzhou University}
+	\cvline{\textbf{2019 -- 2022}}
+		{Three-time recipient of the Third-Class Merit Scholarship for Academic Excellence at Nankai University}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{\textbf{References}}
+	% \spacesubsection
+	\subsection{\textbf{Prof.~Zepeng~Li}}
+		\cvline{}
+		{Associate Professor of Machine Learning at Lanzhou University}
+		\cvline{\textbf{Address}}
+		{Tianshui South Road, Chengguan District, Lanzhou, Gansu, China}
+		\cvline{\textbf{Tel}}{+86 22-23503633}
+		\cvline{\textbf{E-mail}}{lizp@lzu.edu.cn}
+	% \subsection{\textbf{Prof.~Yao~Lu}}
+	% 	\cvline{}
+	% 	{Professor of Medical Image Analysis at Sun Yat-sen University}
+	% 	\cvline{\textbf{Address}}
+	% 	{Xingang West Road, Haizhu District, Guangzhou, Guangdong, China}
+	% 	\cvline{\textbf{Tel}}{+86 18664509325}
+	% 	\cvline{\textbf{E-mail}}{luyao23@mail.sysu.edu.cn}
+	% \spacesubsection
+	\subsection{\textbf{Prof.~Yunhua~Xue}}
+		\cvline{}
+		{Associate Professor of Computational Mathematics at Nankai University}
+		\cvline{\textbf{Address}}
+		{Weijin Road, Nankai District, Tianjin, China}
+		\cvline{\textbf{Tel}}{+86 22-23503633}
+		\cvline{\textbf{E-mail}}{yhxue@nankai.edu.cn}
+	% \spacesubsection
+	% \subsection{\textbf{Prof.~Chunlin~Wu}}
+	% 	\cvline{}
+	% 	{Professor of Computational Mathematics at Nankai University}
+	% 	\cvline{\textbf{Address}}
+	% 	{Weijin Road, Nankai District, Tianjin, China}
+	% 	\cvline{\textbf{Tel}}{+86 22-23503509}
+	% 	\cvline{\textbf{E-mail}}{wucl@nankai.edu.cn}
+% \nocite{*}
+% \printbibliography[heading=none, env=midbib, keyword=academic]
+
+% \ \\
+
+% {\color{color1}\textbf{Fictional Writings}}
+% \printbibliography[heading=none, env=midbib, keyword=fiction]
+
+
+
+%=============================
+% this part is a simple cover letter
+\clearpage
+\end{document}
