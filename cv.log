@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.1.21)  4 NOV 2024 12:11
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.1.21)  4 NOV 2024 12:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1059,14 +1059,8 @@ Underfull \hbox (badness 1057) in paragraph at lines 257--257
 [2
 
 ] [3] (./cv.aux)
-
-Package rerunfilecheck Warning: File `cv.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `cv.out':
-(rerunfilecheck)             Before: 7478695AF0DF8E2744C9F736F1A6627C;1859
-(rerunfilecheck)             After:  34F1666E1446BC128A349D6B42D422D9;1890.
+Package rerunfilecheck Info: File `cv.out' has not changed.
+(rerunfilecheck)             Checksum: 34F1666E1446BC128A349D6B42D422D9;1890.
 Package logreq Info: Writing requests to 'cv.run.xml'.
 \openout1 = `cv.run.xml'.
 
