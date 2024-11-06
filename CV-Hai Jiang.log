@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.1.21)  5 NOV 2024 08:54
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.1.21)  6 NOV 2024 18:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -969,15 +969,15 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(14.93861pt, 567.63065pt, 14.93861pt)
-* v-part:(T,H,B)=(16.90195pt, 802.79192pt, 25.35298pt)
+* h-part:(L,W,R)=(19.41974pt, 558.6684pt, 19.41974pt)
+* v-part:(T,H,B)=(21.97205pt, 790.11673pt, 32.95807pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=567.63065pt
-* \textheight=802.79192pt
-* \oddsidemargin=-57.33138pt
-* \evensidemargin=-57.33138pt
-* \topmargin=-92.36804pt
+* \textwidth=558.6684pt
+* \textheight=790.11673pt
+* \oddsidemargin=-52.85025pt
+* \evensidemargin=-52.85025pt
+* \topmargin=-87.29794pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=11.0pt
@@ -1062,7 +1062,7 @@ Package logreq Info: Writing requests to '"CV-Hai Jiang".run.xml'.
 Here is how much of TeX's memory you used:
  37264 strings out of 476683
  745780 string characters out of 5801401
- 1880012 words of memory out of 5000000
+ 1879012 words of memory out of 5000000
  56952 multiletter control sequences out of 15000+600000
  515690 words of font info for 80 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
