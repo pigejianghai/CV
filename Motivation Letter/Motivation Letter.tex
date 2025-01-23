@@ -1,26 +1,59 @@
-\documentclass{ExpressiveCoverLetter}
-
+\documentclass[11pt,a4paper, final]{moderncv}
+\usepackage{color}
+\usepackage{fontspec}
+\usepackage{url}
+\moderncvtheme{classic}
+\definecolor{color1}{RGB}{1, 52, 64}
+\usepackage[scale=0.88]{geometry}
+\setlength{\hintscolumnwidth}{3.5cm} 
+\AtBeginDocument{\recomputelengths} 
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\usepackage[utf8]{inputenc}
+\usepackage{lipsum} 
+\usepackage{tikz}
+\usepackage{arydshln}
+\usepackage{nccrules}
+\usepackage{verbatim}
+\setmainfont{Times New Roman}%[Numbers=OldStyle]
+\AfterPreamble{\hypersetup{
+  pdfcreator={XeLaTeX},
+  pdftitle={Fictional CV of Hai Jiang}
+}}
+\usepackage{fontawesome5}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\firstname{Hai}
+\familyname{Jiang}
+\address{Shenzhen, Guangdong, China}{}
+\extrainfo{
+	\faPhone\hspace{0.5em}+86 19867713757\\
+	{\small\faEnvelope}\hspace{0.5em}jiangh14@lzu.edu.cn\\
+	% \faGithub\hspace{0.5em}\url{https://github.com/pigejianghai}
+}
+\newcommand{\spacesection}{\vspace{0.4cm}}
+\newcommand{\spacesubsection}{\vspace{0.2cm}}
+%===========================
 \begin{document}
-
-% \coverletterheader[
-%     firstname=Cover,
-%     middleinitial=,
-%     lastname=Letter,
-%     email=luyao23@mail.sysu.edu.cn,
-%     phone=+86 18664509325,
-%     % linkedin=johndoe,
-%     % github=johndoe,
-%     % city=Guangzhou,
-%     % state=China
-% ]
-
-% \vspace{0.35in}
-\hfill\today
-% \vspace{0.15in}
-
-\textbf{To whom it may concern}, 
-
-{\fontsize{12}{15}\selectfont
+\recipient{Admission Committee}
+{Technical University of Munich \\
+Department of Computer Science \\
+Decision Sciences and Systems}
+\date{\today}
+\opening{To whom it may concern,}
+\closing{Sincerely,}
+% \enclosure[Attached]{curriculum vit\ae{}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\makelettertitle
+\thispagestyle{empty}
+\pagestyle{empty}
 I am writing to express my keen interest in the PhD position at your university. 
 % specializing in \textbf{Machine Learning on large databases for interventional cardiac PCI treatment}. 
 My academic background and research experience have equipped me with the skills and knowledge 
@@ -85,12 +118,7 @@ I am enthusiastic about the opportunity to join your research community
 and contribute actively while continuing to develop my expertise. 
 Thank you for considering my application, 
 and I look forward to discussing how my background, skills, and goals align with your program.
-}
 
-
-% \vspace{0.5in}
-\textbf{Sincerely,}\\
-Hai Jiang \\
-\email jiangh14@lzu.edu.cn\\
-\phone +86 19867713757\\
+\makeletterclosing
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
