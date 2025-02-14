@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.1.21)  14 FEB 2025 11:52
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.1.21)  14 FEB 2025 14:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -751,15 +751,15 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(8.96225pt, 579.58336pt, 8.96227pt)
-* v-part:(T,H,B)=(10.14014pt, 819.69646pt, 15.21025pt)
+* h-part:(L,W,R)=(35.84901pt, 525.80984pt, 35.84901pt)
+* v-part:(T,H,B)=(40.56058pt, 743.64534pt, 60.84093pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=579.58336pt
-* \textheight=819.69646pt
-* \oddsidemargin=-63.30774pt
-* \evensidemargin=-63.30774pt
-* \topmargin=-99.12985pt
+* \textwidth=525.80984pt
+* \textheight=743.64534pt
+* \oddsidemargin=-36.42097pt
+* \evensidemargin=-36.42097pt
+* \topmargin=-68.70941pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=11.0pt
@@ -789,34 +789,31 @@ Package hyperref Info: Link coloring OFF on input line 39.
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/sl' in size <10> not available
 (Font)              Font shape `TU/TimesNewRoman(0)/m/it' tried instead on input line 39.
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/b/sl' in size <10> not available
-(Font)              Font shape `TU/TimesNewRoman(0)/b/it' tried instead on input line 56.
+(Font)              Font shape `TU/TimesNewRoman(0)/b/it' tried instead on input line 57.
  (d:/Program Files/texlive/2023/texmf-dist/tex/latex/microtype/mt-TU-empty.cfg
 File: mt-TU-empty.cfg 2021/06/22 v1.1 microtype config. file: fonts with nonstandard glyph set (RS)
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 56.
+(Font)              <10.95> on input line 57.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 56.
+(Font)              <8> on input line 57.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 56.
+(Font)              <6> on input line 57.
  (d:/Program Files/texlive/2023/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
 ) [1
 
-] (./Motivation Letter.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
+] [2] (./Motivation Letter.aux)
 Package rerunfilecheck Info: File `"Motivation Letter".out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
  ) 
 Here is how much of TeX's memory you used:
  30488 strings out of 476683
  608425 string characters out of 5801401
- 1870012 words of memory out of 5000000
+ 1868012 words of memory out of 5000000
  50227 multiletter control sequences out of 15000+600000
  515626 words of font info for 72 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 129i,5n,122p,1092b,470s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 129i,6n,122p,1092b,470s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Motivation Letter.pdf (1 page).
+Output written on Motivation Letter.pdf (2 pages).
