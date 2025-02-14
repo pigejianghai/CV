@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.1.21)  14 FEB 2025 11:33
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.1.21)  14 FEB 2025 11:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -751,15 +751,15 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(59.74988pt, 478.00812pt, 59.74988pt)
-* v-part:(T,H,B)=(67.60269pt, 676.04005pt, 101.4041pt)
+* h-part:(L,W,R)=(8.96225pt, 579.58336pt, 8.96227pt)
+* v-part:(T,H,B)=(10.14014pt, 819.69646pt, 15.21025pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=478.00812pt
-* \textheight=676.04005pt
-* \oddsidemargin=-12.52011pt
-* \evensidemargin=-12.52011pt
-* \topmargin=-41.6673pt
+* \textwidth=579.58336pt
+* \textheight=819.69646pt
+* \oddsidemargin=-63.30774pt
+* \evensidemargin=-63.30774pt
+* \topmargin=-99.12985pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=11.0pt
@@ -803,17 +803,20 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
 ) [1
 
-] [2] (./Motivation Letter.aux)
+] (./Motivation Letter.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `"Motivation Letter".out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
  ) 
 Here is how much of TeX's memory you used:
  30488 strings out of 476683
  608425 string characters out of 5801401
- 1865012 words of memory out of 5000000
+ 1870012 words of memory out of 5000000
  50227 multiletter control sequences out of 15000+600000
  515626 words of font info for 72 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  129i,5n,122p,1092b,470s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Motivation Letter.pdf (2 pages).
+Output written on Motivation Letter.pdf (1 page).
