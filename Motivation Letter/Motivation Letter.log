@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.1.21)  13 FEB 2025 19:44
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.1.21)  14 FEB 2025 11:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -751,15 +751,15 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(14.93861pt, 567.63065pt, 14.93861pt)
-* v-part:(T,H,B)=(16.90195pt, 802.79192pt, 25.35298pt)
+* h-part:(L,W,R)=(59.74988pt, 478.00812pt, 59.74988pt)
+* v-part:(T,H,B)=(67.60269pt, 676.04005pt, 101.4041pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=567.63065pt
-* \textheight=802.79192pt
-* \oddsidemargin=-57.33138pt
-* \evensidemargin=-57.33138pt
-* \topmargin=-92.36804pt
+* \textwidth=478.00812pt
+* \textheight=676.04005pt
+* \oddsidemargin=-12.52011pt
+* \evensidemargin=-12.52011pt
+* \topmargin=-41.6673pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=11.0pt
@@ -785,8 +785,9 @@ Package hyperref Info: Link coloring OFF on input line 39.
 \@outlinefile=\write4
 \openout4 = `"Motivation Letter.out"'.
 
+\pagenumberwidth=\skip98
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/sl' in size <10> not available
-(Font)              Font shape `TU/TimesNewRoman(0)/m/it' tried instead on input line 56.
+(Font)              Font shape `TU/TimesNewRoman(0)/m/it' tried instead on input line 39.
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/b/sl' in size <10> not available
 (Font)              Font shape `TU/TimesNewRoman(0)/b/it' tried instead on input line 56.
  (d:/Program Files/texlive/2023/texmf-dist/tex/latex/microtype/mt-TU-empty.cfg
@@ -802,17 +803,17 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
 ) [1
 
-] (./Motivation Letter.aux)
+] [2] (./Motivation Letter.aux)
 Package rerunfilecheck Info: File `"Motivation Letter".out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
  ) 
 Here is how much of TeX's memory you used:
- 30487 strings out of 476683
- 608389 string characters out of 5801401
- 1868012 words of memory out of 5000000
- 50226 multiletter control sequences out of 15000+600000
+ 30488 strings out of 476683
+ 608425 string characters out of 5801401
+ 1865012 words of memory out of 5000000
+ 50227 multiletter control sequences out of 15000+600000
  515626 words of font info for 72 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  129i,5n,122p,1092b,470s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Motivation Letter.pdf (1 page).
+Output written on Motivation Letter.pdf (2 pages).
