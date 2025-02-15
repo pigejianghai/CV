@@ -1,0 +1,183 @@
+\documentclass{article}
+
+% \usepackage{charter} % Use the Charter font
+\usepackage{ragged2e}
+\usepackage{blindtext}
+\usepackage{watermark}
+\usepackage{tikz} 
+\usepackage[
+	a4paper, % Paper size
+	top=1in, % Top margin
+	bottom=1in, % Bottom margin
+	left=1in, % Left margin
+	right=1in, % Right margin
+	%showframe % Uncomment to show frames around the margins for debugging purposes
+]{geometry}
+
+\setlength{\parindent}{0pt} % Paragraph indentation
+\setlength{\parskip}{1em} % Vertical space between paragraphs
+
+\usepackage{graphicx} % Required for including images
+
+\usepackage{fancyhdr} % Required for customizing headers and footers
+
+\fancypagestyle{firstpage}{%
+	\fancyhf{} % Clear default headers/footers
+	\renewcommand{\headrulewidth}{0pt} % No header rule
+	% \renewcommand{\footrulewidth}{1pt} % Footer rule thickness
+}
+
+\fancypagestyle{subsequentpages}{%
+	\fancyhf{} % Clear default headers/footers
+	\renewcommand{\headrulewidth}{1pt} % Header rule thickness
+	% \renewcommand{\footrulewidth}{1pt} % Footer rule thickness
+}
+
+\AtBeginDocument{\thispagestyle{firstpage}} % Use the first page headers/footers style on the first page
+\pagestyle{subsequentpages} % Use the subsequent pages headers/footers style on subsequent pages
+
+%----------------------------------------------------------------------------------------
+%\newcommand{\watermark}[3]{\AddToShipoutPictureBG{
+%\parbox[b][\paperheight]{\paperwidth}{
+%\vfill%
+%\centering%
+%\begin{tikzpicture}
+    %\path (0,0) -- (\paperwidth,\paperheight);
+    %\node[opacity=.06] at (current page.center)
+    %{\includegraphics[width=0.55\textwidth]{\node[opacity=.06] at (current page.center)}};
+%\end{tikzpicture}
+%\vfill
+%\watermark{\centering\put(90,-400){\includegraphics[width=0.55\textwidth]{main.jpg}}}
+%\newsavebox\mybox
+%\savebox\mybox{\tikz[color=red,opacity=0.3]\node{\includegraphics[width=0.55\textwidth]{main.jpg}};}
+%\newwatermark*[allpages,angle=45,scale=6,xpos=-20,ypos=15]{\usebox\mybox}
+
+%\node[opacity=.06]
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	FIRST PAGE HEADER
+%----------------------------------------------------------------------------------------
+\includegraphics[width=0.618\textwidth]{nankai.pdf}
+% \begin{figure}[h]
+
+% 	\begin{minipage}{0.48\linewidth}
+% 		\centerline{\includegraphics[width=4.0cm]{nankai.pdf}} % Logo
+% 	\end{minipage}
+
+% 	\begin{minipage}{0.48\linewidth}
+% 		\centering
+% 		\begin{FlushRight}
+% 			\begin{tabular}{r @{}}
+% 				Nankai University \\
+% 				94 Weijin Road, Nankai District\\
+% 				Tianjin, P.R. China 300071
+% 			\end{tabular}
+% 		\end{FlushRight}
+% 	\end{minipage}
+% \end{figure}
+
+% \hfill
+% \begin{FlushRight}
+% \begin{tabular}{r @{}}
+% 	Nankai University \\
+% 	94 Weijin Road, Nankai District\\
+% 	Tianjin, P.R. China 300071
+% \end{tabular}
+% \end{FlushRight}
+
+% \vspace{-2em} % Pull the rule closer to the logo
+
+% \rule{\linewidth}{1pt} % Horizontal rule
+
+% \vspace{-6em} % Pull the address closer to the rule
+%\bigskip\bigskip % Vertical whitespace
+
+
+
+\begin{FlushLeft}
+To whom it may concerns
+\end{FlushLeft}
+
+
+\textbf{Recommendation of applicant: Hai Jiang}\\
+\today \bigskip\\ % Date
+\vspace{-3em}
+% \begin{right}
+% \end{right}
+
+
+
+
+\bigskip % Vertical whitespace
+\vspace{10pt}
+
+%----------------------------------------------------------------------------------------
+%	LETTER CONTENT
+%----------------------------------------------------------------------------------------
+
+%\watermark{\centering\put(90,-450){\includegraphics[width=0.7\textwidth]{main.jpg}}}
+Dear Madam, dear Sir, 
+
+It is with great enthusiasm that I recommend Mr. Hai Jiang for admission to your esteemed program. 
+As his academic advisor during his undergraduate studies at Nankai University's School of Mathematical Sciences, 
+I have closely observed his intellectual growth and am confident in his potential to excel in advanced academic pursuits.
+
+Hai Jiang distinguished himself as an exceptional student in Computational Mathematics, 
+consistently demonstrating analytical rigor, creativity, and dedication. 
+His senior thesis, \emph{``GANs-Based Personal Style Imitation of Chinese Handwritten Characters,'' }
+exemplifies his technical prowess and innovative thinking. 
+In this project, 
+he successfully adapted CycleGANs to replicate personalized Chinese handwriting styles and introduced Deformable Convolutional Networks to refine character generation quality. 
+These contributions not only highlight his mastery of deep learning and mathematical modeling but also his ability to tackle complex, interdisciplinary challenges.
+
+Beyond academic achievements, Hai possesses remarkable personal qualities. 
+He is highly self-motivated, often seeking additional resources to deepen his understanding of mathematical theories and AI applications. 
+During collaborative projects, he proved to be a reliable team member, 
+balancing independent work with constructive group contributions. 
+His open-mindedness and communication skills enabled him to engage effectively with peers and faculty, 
+fostering a productive academic environment.
+
+What truly sets Hai apart is his intellectual curiosity and resilience. 
+When confronted with obstacles in his research, he approached them methodically, 
+iterating solutions until achieving optimal results. 
+His proactive attitude and problem-solving mindset make him well-suited for rigorous academic challenges.
+
+I am confident that Hai Jiang will thrive in your program and contribute meaningfully to your academic community. 
+His passion for learning, coupled with his technical expertise and strong work ethic, 
+positions him as an outstanding candidate. 
+Please do not hesitate to contact me for further details.
+
+% I remain at your disposal in case you would have any requests for further information.
+ 
+
+
+\bigskip % Vertical whitespace
+
+Sincerely,
+% \bigskip
+\vspace{30pt} % Vertical whitespace
+
+% \bigskip
+\textbf{Prof. Yunhua~Xue}\\
+% \bigskip
+\vspace{20pt}
+
+School of Mathematical Scienes\\
+% \bigskip
+Nankai University\\
+E-mail: yhxue@nankai.edu.cn~ \\ 
+Tel: +86 22-23503633
+
+
+%\bigskip % Vertical whitespace
+%\begin{FlushLeft}
+%\includegraphics[width=0.13\textwidth]{sign.jpg}\\ % Logo
+%\end{FlushLeft}
+%\vspace{-5pt} % Vertical whitespace
+%\begin{FlushLeft}
+%John Smith
+%\end{FlushLeft}
+
+
+\end{document}
