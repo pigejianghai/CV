@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.1.21)  14 FEB 2025 15:34
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.1.21)  15 FEB 2025 16:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -751,15 +751,15 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(35.84901pt, 525.80984pt, 35.84901pt)
-* v-part:(T,H,B)=(40.56058pt, 743.64534pt, 60.84093pt)
+* h-part:(L,W,R)=(23.90086pt, 549.70615pt, 23.90086pt)
+* v-part:(T,H,B)=(27.04211pt, 777.44154pt, 40.56319pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=525.80984pt
-* \textheight=743.64534pt
-* \oddsidemargin=-36.42097pt
-* \evensidemargin=-36.42097pt
-* \topmargin=-68.70941pt
+* \textwidth=549.70615pt
+* \textheight=777.44154pt
+* \oddsidemargin=-48.36913pt
+* \evensidemargin=-48.36913pt
+* \topmargin=-82.22787pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=11.0pt
@@ -786,18 +786,18 @@ Package hyperref Info: Link coloring OFF on input line 39.
 \openout4 = `"Motivation Letter.out"'.
 
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/sl' in size <10> not available
-(Font)              Font shape `TU/TimesNewRoman(0)/m/it' tried instead on input line 52.
+(Font)              Font shape `TU/TimesNewRoman(0)/m/it' tried instead on input line 53.
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/b/sl' in size <10> not available
-(Font)              Font shape `TU/TimesNewRoman(0)/b/it' tried instead on input line 52.
+(Font)              Font shape `TU/TimesNewRoman(0)/b/it' tried instead on input line 53.
  (d:/Program Files/texlive/2023/texmf-dist/tex/latex/microtype/mt-TU-empty.cfg
 File: mt-TU-empty.cfg 2021/06/22 v1.1 microtype config. file: fonts with nonstandard glyph set (RS)
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 52.
+(Font)              <10.95> on input line 53.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 52.
+(Font)              <8> on input line 53.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 52.
+(Font)              <6> on input line 53.
  (d:/Program Files/texlive/2023/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
 ) [1
