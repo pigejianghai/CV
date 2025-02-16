@@ -1,0 +1,134 @@
+\documentclass{article}
+\usepackage{ragged2e}
+\usepackage{blindtext}
+\usepackage{watermark}
+\usepackage{amsmath}
+\usepackage{tikz} 
+% \usepackage{itemize}
+\usepackage[
+	a4paper, % Paper size
+	top=1in, % Top margin
+	bottom=1in, % Bottom margin
+	left=1in, % Left margin
+	right=1in, % Right margin
+	%showframe % Uncomment to show frames around the margins for debugging purposes
+]{geometry}
+
+\setlength{\parindent}{0pt} % Paragraph indentation
+\setlength{\parskip}{1em} % Vertical space between paragraphs
+
+\usepackage{graphicx} % Required for including images
+\usepackage{hyperref,color}
+\usepackage{fancyhdr} % Required for customizing headers and footers
+
+\fancypagestyle{firstpage}{%
+	\fancyhf{} % Clear default headers/footers
+	\renewcommand{\headrulewidth}{0pt} % No header rule
+	% \renewcommand{\footrulewidth}{1pt} % Footer rule thickness
+}
+
+\fancypagestyle{subsequentpages}{%
+	\fancyhf{} % Clear default headers/footers
+	\renewcommand{\headrulewidth}{1pt} % Header rule thickness
+	% \renewcommand{\footrulewidth}{1pt} % Footer rule thickness
+}
+\renewcommand{\today}{\number\year /\number\month /\number\day}
+\AtBeginDocument{\thispagestyle{firstpage}} % Use the first page headers/footers style on the first page
+\pagestyle{subsequentpages} % Use the subsequent pages headers/footers style on subsequent pages
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=blue,      
+    urlcolor=blue,
+    citecolor=cyan,
+}
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	FIRST PAGE HEADER
+%----------------------------------------------------------------------------------------
+\begin{figure}[h]
+	\begin{minipage}{0.4\linewidth}
+		% \hfill
+		\includegraphics[width=\textwidth]{zju_2.pdf}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.48\linewidth}
+	\begin{flushright}%{0.45\linewidth}
+		% \hfill
+		% \begin{tabular}{r}
+			% {\tiny SCHOOL OF COMPUTER SCIENCE AND TECHONOLOGY}\\
+			{\footnotesize ZHEJIANG UNIVERSITY (ZJU)}\\
+			{\footnotesize 866 YUHANGTANG RD, HANGZHOU 310058}\\
+			{\footnotesize P.R. CHINA}
+		% \end{tabular}
+	\end{flushright}
+	\end{minipage}
+\end{figure}
+
+\vspace{7pt}
+
+\begin{FlushLeft}
+To whom it may concerns
+\end{FlushLeft}
+
+
+\underline{\textbf{Recommendation of Mr. Hai Jiang}}\\
+\today \bigskip\\ % Date
+\vspace{-3em}
+% \begin{right}
+% \end{right}
+
+
+
+
+\bigskip % Vertical whitespace
+\vspace{5pt}
+
+%----------------------------------------------------------------------------------------
+%	LETTER CONTENT
+%----------------------------------------------------------------------------------------
+
+%\watermark{\centering\put(90,-450){\includegraphics[width=0.7\textwidth]{main.jpg}}}
+Dear Sir or Madam, 
+
+I am delighted to recommend Mr. Hai Jiang for admission to your doctoral program. Over the past two years, I have had the privilege of working with Mr. Jiang as his primary research collaborator at the Computational Medical Imaging Lab (CMILAB) at Sun Yat-sen University. In this capacity, I have witnessed firsthand his intellectual rigor, technical ingenuity, and exceptional leadership skills.
+
+Mr. Jiang combines deep theoretical understanding with applied technical mastery. His contributions to two significant projects showcased his advanced computational proficiency with tools such as Python, TensorFlow/Keras, PyTorch, and MATLAB. He effectively integrated medical imaging principles—for instance, MRI and CT reconstruction—with modern machine learning techniques. His research aptitude is further evidenced by his first-authored conference paper, which was accepted at ISBI 2025.
+
+In addition to his technical skills, Mr. Jiang is an innovative problem-solver. He redesigned our laboratory's classification pipeline, resulting in a 9\% improvement in AUC. Furthermore, he successfully led a multidisciplinary team of clinicians, radiologists, and engineers to complete a dual-energy CT project. His ability to bridge diverse fields and manage collaborative efforts highlights his readiness for the challenges of doctoral study.
+
+Mr. Jiang's motivation, self-discipline, and resilience are equally impressive. He consistently approaches setbacks with composure and a methodical mindset, analyzing challenges and developing creative solutions. His proactive communication and unwavering commitment to scientific rigor make him an outstanding candidate for your program.
+
+I am confident that Hai possesses the intellectual foundation, technical expertise, and personal drive necessary to excel in your doctoral program. I wholeheartedly endorse his application and am available to provide further information if needed.
+
+\bigskip
+
+Sincerely,
+\vspace{10pt}
+
+Yuanpin~Zhou\\
+\vspace{10pt}
+
+
+\begin{figure}[bp]
+	\begin{minipage}{0.49\linewidth}
+		\begin{FlushLeft}
+		% \begin{tabular}{l}
+			{\footnotesize YUANPIN ZHOU, PhD}\\
+			{\footnotesize POSTDOCTORAL RESEARCHER, ZJU}\\
+			% {\footnotesize SCHOOL OF COMPUTER SCIENCE AND TECHONOLOGY, ZJU}\\
+			\underline{{\small \href{mailto:yuanpinzhou@zju.edu.cn}{yuanpinzhou@zju.edu.cn}}}\\
+			{\small TEL. +86 15521227642}
+		% \end{tabular}
+		\end{FlushLeft}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.49\linewidth}
+		\hfill
+		\includegraphics[width=0.21\textwidth]{zju_1.pdf}
+	\end{minipage}
+\end{figure}
+
+\end{document}
