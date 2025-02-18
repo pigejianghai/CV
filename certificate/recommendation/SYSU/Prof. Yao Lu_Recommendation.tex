@@ -1,0 +1,141 @@
+\documentclass{article}
+
+% \usepackage{charter} % Use the Charter font
+\usepackage{ragged2e}
+\usepackage{blindtext}
+\usepackage{watermark}
+\usepackage{tikz} 
+\usepackage[
+	a4paper, % Paper size
+	top=1in, % Top margin
+	bottom=1in, % Bottom margin
+	left=1in, % Left margin
+	right=1in, % Right margin
+	%showframe % Uncomment to show frames around the margins for debugging purposes
+]{geometry}
+
+\setlength{\parindent}{0pt} % Paragraph indentation
+\setlength{\parskip}{1em} % Vertical space between paragraphs
+
+\usepackage{graphicx} % Required for including images
+
+\usepackage{fancyhdr} % Required for customizing headers and footers
+
+\fancypagestyle{firstpage}{%
+	\fancyhf{} % Clear default headers/footers
+	\renewcommand{\headrulewidth}{0pt} % No header rule
+	\renewcommand{\footrulewidth}{1pt} % Footer rule thickness
+}
+
+\fancypagestyle{subsequentpages}{%
+	\fancyhf{} % Clear default headers/footers
+	\renewcommand{\headrulewidth}{1pt} % Header rule thickness
+	\renewcommand{\footrulewidth}{1pt} % Footer rule thickness
+}
+
+\AtBeginDocument{\thispagestyle{firstpage}} % Use the first page headers/footers style on the first page
+\pagestyle{subsequentpages} % Use the subsequent pages headers/footers style on subsequent pages
+
+%----------------------------------------------------------------------------------------
+%\newcommand{\watermark}[3]{\AddToShipoutPictureBG{
+%\parbox[b][\paperheight]{\paperwidth}{
+%\vfill%
+%\centering%
+%\begin{tikzpicture}
+    %\path (0,0) -- (\paperwidth,\paperheight);
+    %\node[opacity=.06] at (current page.center)
+    %{\includegraphics[width=0.55\textwidth]{\node[opacity=.06] at (current page.center)}};
+%\end{tikzpicture}
+%\vfill
+%\watermark{\centering\put(90,-400){\includegraphics[width=0.55\textwidth]{main.jpg}}}
+%\newsavebox\mybox
+%\savebox\mybox{\tikz[color=red,opacity=0.3]\node{\includegraphics[width=0.55\textwidth]{main.jpg}};}
+%\newwatermark*[allpages,angle=45,scale=6,xpos=-20,ypos=15]{\usebox\mybox}
+
+%\node[opacity=.06]
+\setlength{\parindent}{2em}
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	FIRST PAGE HEADER
+%----------------------------------------------------------------------------------------
+\includegraphics[width=0.36\textwidth]{sysu.pdf}
+
+\vspace{-1.5em} % Pull the rule closer to the logo
+\begin{FlushLeft}
+\rule{\linewidth}{1pt} % Horizontal rule
+\end{FlushLeft}
+% \vspace{-6em} % Pull the address closer to the rule
+%\bigskip\bigskip % Vertical whitespace
+
+
+
+\begin{FlushLeft}
+\today \bigskip\\ % Date
+Admissions Committee
+\end{FlushLeft}
+\vspace{-3em}
+
+
+\bigskip % Vertical whitespace
+\vspace{15pt}
+
+%----------------------------------------------------------------------------------------
+%	LETTER CONTENT
+%----------------------------------------------------------------------------------------
+
+To Whom It May Concern: 
+
+It is with great pleasure that I recommend Mr. Hai Jiang, 
+a talented research assistant in my Computational Medical Imaging Laboratory (CMILAB) at Sun Yat-sen University, 
+for admission to your esteemed program. 
+As a Full Professor in the School of Computer Science and Engineering and 
+a former Research Investigator at the University of Michigan's Department of Radiology, 
+I have mentored numerous researchers and am confident in assessing candidates' potential for rigorous academic environments.
+
+Hai Jiang has been an indispensable member of my team, demonstrating exceptional aptitude in medical imaging and deep learning. 
+His work on improving diagnostic accuracy for Placenta Accreta Spectrum (PAS) exemplifies his technical ingenuity. 
+By designing a novel algorithm, he elevated the diagnostic AUC to over 80\%, a significant advancement for clinical decision-making. 
+Additionally, he developed a CNNs-based diagnostic model for detecting sentinel axillary lymph node metastasis in breast cancer, showcasing his versatility in applying AI to diverse medical challenges.
+
+Beyond technical expertise, Hai exhibits remarkable intellectual curiosity and perseverance. 
+His ability to independently troubleshoot complex problems and synthesize interdisciplinary knowledge—spanning radiology, computer vision, and clinical medicine—sets him apart. 
+Notably, his paper on medical image analysis was accepted and presented at the prestigious IEEE International Symposium on Biomedical Imaging (ISBI 2025), a testament to his research rigor and communication skills.
+
+Hai's creativity, work ethic, and dedication to advancing healthcare through technology align seamlessly with the goals of cutting-edge academic programs.
+I am confident that Hai Jiang will not only thrive in your program but also emerge as a leader in his field. His blend of analytical rigor, technical proficiency, and passion for innovation makes him an outstanding candidate. 
+For any further inquiries, please contact me at luyao23@mail.sysu.edu.cn or (+86) 18664509325.
+ 
+
+
+\bigskip % Vertical whitespace
+
+
+
+\begin{FlushLeft}
+Sincerely,
+\vspace{15pt} % Vertical whitespace
+
+Yao~Lu, PhD\\
+\vspace{30pt}
+
+Professor\\
+School of Computer Science and Engineering\\
+Sun Yat-sen University, Guangzhou, China\\
+% Presiden of Guangzhou Perception Vision Medical Technologies LTD.co.\\
+% E-mail: luyao23@mail.sysu.edu.cn\\ 
+% Tel: +86 18664509325
+\end{FlushLeft}
+
+
+%\bigskip % Vertical whitespace
+%\begin{FlushLeft}
+%\includegraphics[width=0.13\textwidth]{sign.jpg}\\ % Logo
+%\end{FlushLeft}
+%\vspace{-5pt} % Vertical whitespace
+%\begin{FlushLeft}
+%John Smith
+%\end{FlushLeft}
+
+
+\end{document}
