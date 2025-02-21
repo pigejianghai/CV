@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.1.21)  21 FEB 2025 13:21
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.1.21)  21 FEB 2025 15:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -8,8 +8,8 @@ entering extended mode
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-02-22> (d:/Program Files/texlive/2023/texmf-dist/tex/latex/moderncv/moderncv.cls
 Document Class: moderncv 2022-02-21 v2.3.1 modern curriculum vitae and letter document class
-(d:/Program Files/texlive/2023/texmf-dist/tex/latex/base/size11.clo
-File: size11.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
+(d:/Program Files/texlive/2023/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
 ) (d:/Program Files/texlive/2023/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count181
@@ -750,23 +750,23 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(59.74988pt, 478.00812pt, 59.74988pt)
-* v-part:(T,H,B)=(67.60269pt, 676.04005pt, 101.4041pt)
+* h-part:(L,W,R)=(74.68848pt, 448.1309pt, 74.68849pt)
+* v-part:(T,H,B)=(84.50467pt, 633.78513pt, 126.75705pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=478.00812pt
-* \textheight=676.04005pt
-* \oddsidemargin=-12.52011pt
-* \evensidemargin=-12.52011pt
-* \topmargin=-41.6673pt
+* \textwidth=448.1309pt
+* \textheight=633.78513pt
+* \oddsidemargin=2.41849pt
+* \evensidemargin=2.41849pt
+* \topmargin=-24.76532pt
 * \headheight=12.0pt
 * \headsep=25.0pt
-* \topskip=11.0pt
+* \topskip=10.0pt
 * \footskip=30.0pt
-* \marginparwidth=50.0pt
-* \marginparsep=10.0pt
+* \marginparwidth=57.0pt
+* \marginparsep=11.0pt
 * \columnsep=10.0pt
-* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -784,19 +784,17 @@ Package hyperref Info: Link coloring OFF on input line 38.
 \@outlinefile=\write4
 \openout4 = `"Motivation Letter.out"'.
 
-LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/sl' in size <10> not available
+LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/sl' in size <9> not available
 (Font)              Font shape `TU/TimesNewRoman(0)/m/it' tried instead on input line 56.
-LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/b/sl' in size <10> not available
+LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/b/sl' in size <9> not available
 (Font)              Font shape `TU/TimesNewRoman(0)/b/it' tried instead on input line 56.
  (d:/Program Files/texlive/2023/texmf-dist/tex/latex/microtype/mt-TU-empty.cfg
 File: mt-TU-empty.cfg 2021/06/22 v1.1 microtype config. file: fonts with nonstandard glyph set (RS)
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 56.
+(Font)              <7> on input line 56.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 56.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 56.
+(Font)              <5> on input line 56.
  (d:/Program Files/texlive/2023/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
 ) [1
@@ -806,11 +804,11 @@ Package rerunfilecheck Info: File `"Motivation Letter".out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
  ) 
 Here is how much of TeX's memory you used:
- 30482 strings out of 476683
- 608224 string characters out of 5801401
+ 30466 strings out of 476683
+ 607986 string characters out of 5801401
  1860012 words of memory out of 5000000
- 50222 multiletter control sequences out of 15000+600000
- 515618 words of font info for 71 fonts, out of 8000000 for 9000
+ 50212 multiletter control sequences out of 15000+600000
+ 512879 words of font info for 62 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  129i,5n,122p,1092b,472s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
