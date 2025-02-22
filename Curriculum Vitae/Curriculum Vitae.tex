@@ -1,4 +1,4 @@
-\documentclass[11pt,a4paper, final]{moderncv}
+\documentclass[10pt,a4paper,final]{moderncv}
 \usepackage{color}
 \usepackage{fontspec}
 \usepackage{url}
@@ -9,72 +9,16 @@
 \AtBeginDocument{\recomputelengths} 
 \usepackage{xunicode}
 \usepackage{xltxtra}
-\usepackage[utf8]{inputenc}
 \usepackage{lipsum} 
 \usepackage{tikz}
 \usepackage{arydshln}
 \usepackage{nccrules}
 \usepackage{verbatim}
 \usepackage{amsmath}
-
-
-% \usepackage[
-% 	sorting=none,
-% 	minbibnames=8,
-% 	maxbibnames=9,
-% 	block=space
-% ]{biblatex}
-% \bibliography{publications}
-% \defbibenvironment{midbib}
-% {\list
-% 	{}
-% 	{
-% 		\setlength{\leftmargin}{0mm}
-% 		\setlength{\itemindent}{-\leftmargin}
-% 		\setlength{\itemsep}{\bibitemsep}
-% 		\setlength{\parsep}{\bibparsep}}
-% 	}
-% 	{\endlist}
-% {\item}
-% \DeclareSourcemap{
-% 	\maps[datatype=bibtex]{
-% 		\map{
-% 			\step[fieldsource=mydoi]
-% 			\step[fieldset=usera, origfieldval]
-% 		}
-% 		\map{
-% 			\step[fieldsource=mypdf]
-% 			\step[fieldset=userb, origfieldval]
-% 		}
-% 	}
-% }
-% \DeclareFieldFormat{usera}{\color{color1}[\href{#1}{\textsc{doi}}]}
-% \AtEveryBibitem{
-% 	\csappto{blx@bbx@\thefield{entrytype}}{% 
-% 		\iffieldundef{usera}{ 
-% 			% this gets invoked, once nothing is supplied
-% 			% via the mypdf or mydoi value.
-% 			% you could e.g. display a default thing here.
-% 		}{\space\printfield{usera}}}
-% }
-% \DeclareFieldFormat{userb}{\color{color1}[\href{#1}{\textsc{pdf}}]}
-% \AtEveryBibitem{
-% 	\csappto{blx@bbx@\thefield{entrytype}}{\iffieldundef{userb}{}{\printfield{userb}}}
-% }
-% \renewcommand*{\mkbibnamegiven}[1]{%
-% 	\ifitemannotation{highlight}
-% 	{\textbf{#1}}
-% 	{#1}}
-
-% 	\renewcommand*{\mkbibnamefamily}[1]{%
-% 	\ifitemannotation{highlight}
-% 	{\textbf{#1}}
-% 	{#1}
-% }
-\setmainfont{Times New Roman}%[Numbers=OldStyle]
+\setmainfont{Times New Roman}
 \AfterPreamble{\hypersetup{
   pdfcreator={XeLaTeX},
-  pdftitle={Fictional CV of Hai Jiang}
+  pdftitle={Curriclulum Vitae of Hai Jiang}
 }}
 \usepackage{fontawesome5}
 \firstname{Hai}
@@ -85,21 +29,12 @@
 	{\small\faEnvelope}\hspace{0.5em}jiangh14@lzu.edu.cn\\
 	\faGithub\hspace{0.5em}\url{https://github.com/pigejianghai}
 }
-\newcommand{\spacesection}{\vspace{0.4cm}}
-\newcommand{\spacesubsection}{\vspace{0.2cm}}
+% \newcommand{\spacesection}{\vspace{0.4cm}}
+% \newcommand{\spacesubsection}{\vspace{0.2cm}}
+\renewcommand{\refname}{\textbf{Publications}}
 %===========================
 \begin{document}
 \pagestyle{empty}
-% \bibliographystyle{plain}
-\renewcommand{\refname}{\textbf{Publications}} 
-% \recipient{Admission Committee}
-% {Technical University of Munich \\
-% Department of Computer Science \\
-% Decision Sciences and Systems}
-% \date{\today}
-% \opening{To whom it may concern,}
-% \closing{Sincerely,}
-% \enclosure[Attached]{curriculum vit\ae{}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -299,7 +234,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\clearpage
+% \clearpage
 \section{\textbf{References}}
 	% \spacesubsection
 	% \subsection{\textbf{Prof.~Zepeng~Li}}
